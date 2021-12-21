@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Final
+    </title>
+
+    <style>
+        body{
+            background-color:rgb(49, 27, 175);
+        }
+        #portaFoto {
+         
+            background-color:rgb(54, 27, 175);
+            display: block;
+           
+        }
+    
+        #Foto {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1000px;
+        }
+    
+      
+    
+        @media screen and (orientation:landscape) {
+            #portaFoto {
+                max-width: 1200px;
+                max-height: 800px;
+            }
+        }
+    
+        @media screen and (orientation:portrait) {
+            #portaFoto {
+                max-width: 600px;
+                max-height: 900px;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="Foto">
+    <picture id="portaFoto">
+       
+    
+        <source media="(orientation: landscape) and (min-width:1201px)" srcset="./elefante-vertical1200/elefante.jpg" type="imagen/jpg">
+        <source media="(orientation: landscape) and (min-width:1201px)" srcset="./elefante-vertical1200/elefante.webp" type="image/webp">
+        <source media="(orientation: landscape) and (min-width:1201px)" srcset="./elefante-vertical1200/elefante.heic" type="image/heic">
+    
+        <source media="(orientation: portrait) and (min-width: 801px)" srcset="./jirafa-horizontal800/jirafa.heic"type="image/heic">
+        <source media="(orientation: portrait) and (min-width: 801px)" srcset="./jirafa-horizontal800/jirafa.webp" type="image/webp">
+        <source media="(orientation: portrait) and (min-width: 801px)" srcset="./jirafa-horizontal800/jirafa.jpg" type="image/jpg">
+        
+    
+        <source media="(orientation: portrait) and (min-width: 601px)" srcset="./jirafa-vertical600/jirafa.heic" type="image/heic">
+        <source media="(orientation: portrait) and (min-width: 601px)" srcset="./jirafa-vertical600/jirafa.webp" type="image/webp">
+        <source media="(orientation: portrait) and (min-width: 601px)" srcset="./jirafa-vertical600/jirafa.jpg" type="image/jpg">
+
+   
+        <source media="(orientation: portrait) and (min-width:401px)" srcset="./elefante-horizontal1920/elefante.heic" type="image/heic">
+        <source media="(orientation: portrait) and (min-width:401px)" srcset="./elefante-horizontal1920/elefante.webp" type="image/webp">
+        <source media="(orientation: portrait) and (min-width:401px)" srcset="./elefante-horizontal1920/elefante.jpg" type="image/jpg">
+        
+        <img id="Foto" alt="Fotos" title="Fotos" src="./elefante-horizontal1920/elefante.jpg" />
+</picture>
+</body>
+
+
+
+
+</html>
